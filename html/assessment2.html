@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Sign Up</title>
+  </head>
+  <body>
+    <h1>Course Sign Up Page</h1>
+    <p>Please note: First name, Last name, Password and Email are REQUIRED!</p>
+
+    <form action="https://github.com/" method="get">
+      <label for="firstname">First name: </label>
+      <input id="firstname" type="text" placeholder="First name" required />
+
+      <label for="lastname">Last name: </label>
+      <input id="lastname" type="text" placeholder="Last name" required />
+
+      <p></p>
+
+      <label for="useremail">Email: </label>
+      <input
+        id="useremail"
+        type="email"
+        placeholder="name@email.com"
+        required
+      />
+
+      <label for="pwd">Password: </label>
+      <input id="pwd" type="password" required />
+
+      <h3>Are you over the age of 18?</h3>
+      <label for="over18">Yes: </label>
+      <input id="over18" type="radio" name="age" />
+
+      <label for="notover18">No: </label>
+      <input id="notover18" type="radio" name="age" />
+
+      <h3>Do you have a credit card or PayPal?</h3>
+      <select name="pay">
+        <option value="cc">Credit Card</option>
+        <option value="pp">PayPal</option>
+      </select>
+
+      <p></p>
+      <input type="submit" value="Sign Up!" />
+    </form>
+  </body>
+</html>
