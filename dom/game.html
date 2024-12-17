@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="game.css" />
+    <title>Tic Tac Toe!</title>
+  </head>
+  <body>
+    <!-- TTT header -->
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Tic Tac Toe Game</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Welcome to our tic tac toe game! This game is not perfect, and just
+          made to imitate by grabbing Javascript objects. Still, hope you enjoy
+          this game. Click <strong>'Refresh'</strong> button to refresh and
+          restart the game.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button
+            id="refresh"
+            type="button"
+            class="btn btn-primary btn-lg px-4 gap-3"
+          >
+            Refresh
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game setting: board -->
+    <div id="board">
+      <table>
+        <tr>
+          <td class="square"></td>
+          <td class="square"></td>
+          <td class="square"></td>
+        </tr>
+        <tr>
+          <td class="square"></td>
+          <td class="square"></td>
+          <td class="square"></td>
+        </tr>
+        <tr>
+          <td class="square"></td>
+          <td class="square"></td>
+          <td class="square"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="game.js"></script>
+</html>
