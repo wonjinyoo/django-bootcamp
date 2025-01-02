@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:: User list ::</title>
+  </head>
+  <body>
+    <h1>Here are the users for AppThird:</h1>
+    <!-- Template tagging -->
+    {% if users %}
+    <ol>
+      {% for person in users %}
+      <li>User Info</li>
+      <ul>
+        <li>First name: {{ person.fname }}</li>
+        <li>Last name: {{ person.lname }}</li>
+        <li>Email: {{ person.email }}</li>
+      </ul>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </body>
+</html>
